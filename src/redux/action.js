@@ -1,4 +1,4 @@
-import {ADD_BOOKS,USER_CHECK} from './actionType'
+import {ADD_BOOKS,USER_CHECK, LOGOUT} from './actionType'
 
 export const add_books=(payload)=>{
     return{
@@ -9,6 +9,12 @@ export const add_books=(payload)=>{
 export const user_check=payload=>{
     return{
         type: USER_CHECK,
+        payload
+    }
+}
+export const user_logout=payload=>{
+    return{
+        type: LOGOUT,
         payload
     }
 }

@@ -1,10 +1,12 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {connect} from 'react-redux'
+import {connect} from 'react-redux';
+import {user_logout} from '../redux/action'
 
 function Navbar(props) {
     let {isAuth, login_user}= props
     console.log(isAuth, login_user)
+
     return (
         <div className="mb-5">
              <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -21,7 +23,7 @@ function Navbar(props) {
                         </li>
                         <li className="nav-item ">
                             {
-                            isAuth?<Link to="/login" className="nav-link" >Logout</Link>:
+                            isAuth?<Link to="/" className="nav-link" onClick={props.user_logout} >{login_user} Logout</Link>:
                                     <Link to="/login" className="nav-link" >Login</Link>
                             }
                         </li>
@@ -38,4 +40,9 @@ const mapStateToProps=state=>{
         login_user: state.login_user
     }
 }
-export default connect(mapStateToProps, null) (Navbar)
+const mapDispatchToProps=dispatch=>{
+    return{
+        user_logout: payload=>dispatch(user_logout(payload))
+    }
+}
+export default connect(mapStateToProps, mapDispatchToProps) (Navbar)

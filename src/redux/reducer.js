@@ -1,4 +1,4 @@
-import {ADD_BOOKS,USER_CHECK} from './actionType'
+import {ADD_BOOKS,USER_CHECK, LOGOUT} from './actionType'
 import data from '../data.json'
 const initState={
     data:data,
@@ -32,6 +32,11 @@ const reducer=(state=initState,{type, payload})=>{
                 }
             })
             if(flag) state.isAuth=true
+            return{
+                ...state
+            }
+        case LOGOUT:
+            state.isAuth=false
             return{
                 ...state
             }
