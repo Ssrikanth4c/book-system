@@ -18,7 +18,7 @@ class Home extends Component{
         })
     }
     componentDidUpdate(){
-        console.log(this.props.data)
+        console.log(this.props)
     }
 
     render(){
@@ -109,7 +109,7 @@ class Home extends Component{
 
 const mapStateToProps=state=>{
     return{
-        data: state.data
+        data: state.bookList
     }
 }
 export default connect(mapStateToProps, null) (Home)

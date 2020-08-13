@@ -2,7 +2,7 @@ import {ADD_BOOKS,USER_CHECK, LOGOUT} from './actionType'
 import data from '../data.json'
 const initState={
     data:data,
-    bookList:[],
+    bookList:data,
     isAuth:false,
     users:[
         {
@@ -20,6 +20,7 @@ const initState={
 const reducer=(state=initState,{type, payload})=>{
     switch(type){
         case ADD_BOOKS:
+            console.log(payload)
             return{
                 ...state, bookList:[...state.bookList,payload]
             }
@@ -41,7 +42,7 @@ const reducer=(state=initState,{type, payload})=>{
                 ...state
             }
         default:
-            return {... state}
+            return {... state, data:[ ...state.bookList]}
     }
 }
 

@@ -23,7 +23,7 @@ function Navbar(props) {
                         </li>
                         <li className="nav-item ">
                             {
-                            isAuth?<Link to="/" className="nav-link" onClick={props.user_logout} >{login_user} Logout</Link>:
+                            isAuth?<Link to="/" className="nav-link" onClick={props.user_logout} ><span className='text-danger'>{login_user}</span> Logout</Link>:
                                     <Link to="/login" className="nav-link" >Login</Link>
                             }
                         </li>
