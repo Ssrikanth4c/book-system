@@ -6,6 +6,7 @@
         "Author": "Mikkel",
         "Title":"Book-1",
         "Quantity": 100,
+        "img":"https://images-na.ssl-images-amazon.com/images/I/51oIfnWY54L._AC_SX184_.jpg",
         "Description":"This is one sentence, maybe two. Ideally, no more than that. If you go for three or more sentences, that can be fine as long as they’re very short ones!"
     },
     {
@@ -15,6 +16,7 @@
         "Author": "Dan",
         "Title":"Book-2",
         "Quantity": 140,
+        "img":"https://images-na.ssl-images-amazon.com/images/I/51NYjNgldSL._AC_SX184_.jpg",
         "Description":"This book is the best pick for a broad and open minded person.. Tells you how Love is always associated with sadness, how women are made scape goats for everything that happens, how a person's childhood experiences affect his/her perspectives and whole life.. The book has less to tell and lot to infer. So unleash ur minds open and then start reading the book"
     },
     {
@@ -24,6 +26,7 @@
         "Author": "Jonas",
         "Title":"Book-3",
         "Quantity": 60,
+        "img":"https://images-na.ssl-images-amazon.com/images/I/51zChiHckjL._AC_SX184_.jpg",
         "Description":"rundhati is a poetess, an artist who spins munificence with the ordinary. Her story - a part biography is like fine music to even an untrained ear. She's one writer that I admire mostly because her words tell us a story in visuals. You feel the pain, the struggle, the sly humor and the God she cherishes in small things... --Aakarsh Yardi on Jun 10, 2012"
     },
     {
@@ -33,6 +36,7 @@
         "Author": "Mikkel",
         "Title":"Book-4",
         "Quantity": 180,
+        "img":"https://images-na.ssl-images-amazon.com/images/I/417wTmjOxAL._AC_SX184_.jpg",
         "Description":"To begin with, the book is about a Syrian Christian family in Kerala, God’s Own Country in India. The story is about family intrigues, intrigues of love in and out of wedlock, political intrigues, industry ownership and labor movement intrigues. And children ensnared in the whole shindig."
     },
     {
@@ -42,6 +46,7 @@
         "Author": "pavan",
         "Title":"Book-5",
         "Quantity": 89,
+        "img":"https://images-na.ssl-images-amazon.com/images/I/51wAzPDKyxL._AC_SX184_.jpg",
         "Description":"This is not just another novel that you come across, this is serious, I just couldn't believe myself when I got to know that this was Arundhati Roy's first novel. It was truly deserving for the booker prize. This is not one of those novels that you pick up and finish in one go.You'll be carried along In to a journey, you'll feel pain of the characters and feel joy in their happiness. The phrases and the style of writing is ingenious."
     },
     {
@@ -51,6 +56,7 @@
         "Author": "R K",
         "Title":"Book-6",
         "Quantity": 100,
+        "img":"https://images-na.ssl-images-amazon.com/images/I/51VgPIgY6bL._AC_SX184_.jpg",
         "Description":"This is one of the most heart wrenching and brutally honest book I have ever read.. the way she goes under the skin of her characters is unmatchable... This book takes a little piece of you when you finish reading it."
     }
 ]
