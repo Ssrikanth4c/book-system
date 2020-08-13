@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {add_books} from '../redux/action'
+import {Redirect} from 'react-router-dom';
 
 class Books extends React.Component{
     constructor(props){
@@ -11,7 +12,8 @@ class Books extends React.Component{
             Author:'',
             Quantity:0,
             img:'',
-            Description:''
+            Description:'',
+            isT:false
         }
     }
     componentDidUpdate(){
@@ -29,8 +31,14 @@ class Books extends React.Component{
     handleSubmit=e=>{
         e.preventDefault()
         this.props.add_books(this.state)
+        this.setState({
+            isT:true
+        })
     }
     render(){
+        if(this.state.isT)
+            return <Redirect to='/' />
+        else
         return(
             <div>
                 <h4 className='text-danger'>ADD BOOKS</h4>
